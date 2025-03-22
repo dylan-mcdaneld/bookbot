@@ -19,15 +19,15 @@ def main():
     char_counts_lst = sorted_dicts(char_counts)
     
     # Print results to console
-    print("============ BOOKBOT ============\n")
-    print(f"Analyzing book found at {rel_path}...\n")
-    print("----------- Word Count ----------\n")
-    print(f"{num_words} words found in the document\n")
-    print("--------- Character Count -------\n")
+    print("============ BOOKBOT ============")
+    print(f"Analyzing book found at {rel_path}...")
+    print("----------- Word Count ----------")
+    print(f"Found {num_words} total words")
+    print("--------- Character Count -------")
 
     for item in char_counts_lst:
         if item["character"].isalpha():
-            print(f"{item["character"]}: {item["count"]}")
+            print(f"{item['character']}: {item['count']}")
 
     print("============= END ===============")
 
