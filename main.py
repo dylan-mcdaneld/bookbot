@@ -29,5 +29,6 @@ def main():
         if item["character"].isalpha():
             print(f"{item["character"]}: {item["count"]}")
 
+    print("============= END ===============")
 
 main()
